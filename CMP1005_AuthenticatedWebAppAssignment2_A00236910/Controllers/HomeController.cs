@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using CMP1005_AuthenticatedWebAppAssignment2_A00236910.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CMP1005_AuthenticatedWebAppAssignment2_A00236910.Controllers
 {
@@ -28,6 +29,7 @@ namespace CMP1005_AuthenticatedWebAppAssignment2_A00236910.Controllers
             return View();
         }
 
+        [Authorize]
         public IActionResult Secret()
         {
             return View();
