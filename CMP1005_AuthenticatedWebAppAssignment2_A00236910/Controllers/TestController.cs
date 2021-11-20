@@ -13,7 +13,7 @@ namespace CMP1005_AuthenticatedWebAppAssignment2_A00236910.Controllers
     {
         [Authorize]
         // GET: /<controller>/
-        public IActionResult Secret()
+        public IActionResult secretpage()
         {
             return View();
         }
