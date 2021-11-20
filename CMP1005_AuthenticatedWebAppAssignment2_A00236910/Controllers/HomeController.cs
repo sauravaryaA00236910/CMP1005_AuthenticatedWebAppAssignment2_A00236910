@@ -29,12 +29,6 @@ namespace CMP1005_AuthenticatedWebAppAssignment2_A00236910.Controllers
             return View();
         }
 
-        [Authorize]
-        public IActionResult Secret()
-        {
-            return View();
-        }
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
